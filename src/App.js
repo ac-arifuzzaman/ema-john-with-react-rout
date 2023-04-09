@@ -11,8 +11,12 @@ function App() {
       path: "/",
       element: <Main />,
       children: [
-        { path: "/", element: <Home /> },
-        { path: "/home", element: <Home /> },
+        { path: "/", loader: () => fetch("tshirts.json"), element: <Home /> },
+        {
+          path: "home",
+          loader: () => fetch("tshirts.json"),
+          element: <Home />,
+        },
         {
           path: "about",
           element: <About />,

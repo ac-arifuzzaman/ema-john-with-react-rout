@@ -1,0 +1,9 @@
+.tshirts {
+  border: 1px solid #f2b149;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+.tshirts img {
+  /* width: 260px; */
+  height: 260px;
+}
